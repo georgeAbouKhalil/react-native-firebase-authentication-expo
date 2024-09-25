@@ -3,7 +3,7 @@ import axios from "axios";
 const API_KEY = "AIzaSyA0sfOEf3mhORHUSW-zjbXzZ_A4sWMwn_A"; // it can change (use ur firebase Web API Key )
 
 async function authenticate(mode, email, password) {
-  const url = `https://identitytoolkit.googleapis.com/v1/accounts:${mode}?key=${API_KEY}`;
+  const url = `https://identitytoolkit.googleapis.com/v1/accounts:${mode}?key=${API_KEY}`; //please use ur google api firebase my api maybe not work
 
   const response = await axios.post(url, {
     email: email,
